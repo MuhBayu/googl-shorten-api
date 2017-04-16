@@ -4,13 +4,13 @@ Goo.gl Shorten API
 # USAGE
 
 ->setApiKey('YOUR_API_KEY') <br/>
-MASUKAN API KEY GOOGLE SHORTEN ANDA <br/><br/>
+Masukan API_KEY google shorten Anda <br/><br/>
 
 ->setSSL(boolean) <br/>
 Pilihan:
 <ul>
-<li>(TRUE) JIKA WEBSITE YANG MANJALANKAN FILE INI BER-SSL (https) </li>
-<li>(FALSE) JIKA WEBSITE YANG MANJALANKAN FILE INI TIDAK BER-SSL (http) </li>
+<li>(TRUE) Jika website yang menjalankan file ini ber-SSL (https) </li>
+<li>(FALSE) Jika website yang menjalankan file ini tidak ber-SSL (http) </li>
 </ul>
 <br/>
 
@@ -21,12 +21,12 @@ Pilihan:
 <li>ANALYTICS_CLICKS</li>
 <li>ANALYTICS_TOP_STRINGS</li>
 </ul>
-INFO LEBIH LANJUT SILAHKAN PANGGIL FUNGSI getProjection() <br/> <br/>
+*INFO LEBIH LANJUT SILAHKAN PANGGIL FUNGSI getProjection() <br/> <br/>
 
 ->shortURL() <br/>
-FUNGSI UNTUK MEMPERPENDEK URL <br/>
+Fungsi untuk memperpendek URL <br/>
 
 ->expandURL() <br/>
-FUNGSI UNTUK MENDAPATKAN INFORMASI SHORT URL <br/><br/>
+Fungsi untuk mendapatkan informasi SHORT URL yang dibuat <br/><br/>
 
 >> Jika anda belum mempunyai API_KEY silahkan buat di website google developers
