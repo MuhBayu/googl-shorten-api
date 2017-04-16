@@ -13,7 +13,7 @@ $long_Url = 'http://bayuu.net';
 
 $googl = new Google_Shorten();
 $googl->setApiKey('YOUR_API_KEY');  // Masukan API_KEY kamu disini
-$googl->setSSL(false);              // SSL_VERIFY
+$googl->setSSL(true);               // SSL_VERIFY
 
 $response_output = $googl->shortURL($long_Url);
 $response_parse = json_decode($response_output);
