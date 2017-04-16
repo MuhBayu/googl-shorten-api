@@ -9,20 +9,19 @@ require_once('api-lib/Google_shorten_API.php');
 * for EXPAND URL ----> expandURL()
 */
 
-$longUrl = 'http://dkit.ga';
 $shortUrl = 'http://goo.gl/Wsfmxo';
 
-$client = new Google_Shorten();
-$client->setApiKey('AIzaSyDRM-2mjS1AGEsGtzB_ACf_6REpUEoeuwE');
-$client->setSSL(false);
-$client->setProjection('ANALYTICS_CLICKS');
+$googl = new Google_Shorten();
+$googl->setApiKey('YOUR API KEY');
+$googl->setSSL(true); // SSL_VERIFY
+$googl->setProjection('ANALYTICS_CLICKS'); // for ExpandURL
 
-$expandOutput = $client->expandURL($shortUrl);
+$expandOutput = $googl->expandURL($shortUrl);
 $expandParse = json_decode($expandOutput);
 if(isset($expandParse->{'kind'})) {
 	echo $expandOutput;
 } else {
-	echo "error";
+	echo "gagal, ada error..";
 }
 
 
