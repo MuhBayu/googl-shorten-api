@@ -7,7 +7,7 @@ Goo.gl Shorten API
 Input your google shorten API KEY<br/><br/>
 
 ->setSSL(boolean) <br/>
-Pilihan:
+Option:
 <ul>
 <li>(TRUE) enable it, if your site using HTTPS </li>
 <li>(FALSE) disable it, if your site using HTTP </li>
