@@ -59,7 +59,7 @@ class Google_Shorten
 			'shortUrl' => $_URL,
 			'projection' => $this->_projection);
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/urlshortener/v1/url?' . http_build_query($Params));
+		curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/urlshortener/v1/url?' . http_build_query($params));
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, $this->_SSL_VERIFY);
